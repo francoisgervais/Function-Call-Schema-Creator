@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OpenAI Function Schema Builder</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link href="styles.css" rel="stylesheet">
+</head>
+<body>
+
+<div class="container mt-5">
+    <h1 class="text-center">OpenAI Function Schema Builder</h1>
+    <p class="text-center">A tool to help create schemas with multiple functions.</p>
+
+    <!-- JSON Output Box -->
+    <div class="form-group bg-light">
+        <label for="schemaOutput">Generated Schema JSON</label>
+        <textarea id="schemaOutput" class="form-control bg-white" rows="10"></textarea>
+    </div>
+
+    <!-- JSON Output Box -->
+    <div class="form-group bg-light">
+        <label for="functionList">Function List</label>
+        <textarea id="functionList" class="form-control bg-white" rows="1"></textarea>
+    </div>
+
+    <!-- Schema Card Template -->
+    <div class="row g-0 mt-4" id="schemaRow">
+        <!-- Schema cards will be dynamically added here -->
+
+        <!-- "Add New Card" Button -->
+        <div class="col-6 card-container" id="addCardContainer">
+            <div class="card text-center bg-light" id="addCard" style="cursor: pointer;">
+                <div class="card-body">
+                    <button type="button" class="btn btn-outline-success btn-sm">Add Schema</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Bootstrap JS and dependencies -->
+<script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.2/dist/js/bootstrap.bundle.min.js"></script>
+<!-- External JavaScript -->
+<script src="script.js"></script>
+
+</body>
+</html>

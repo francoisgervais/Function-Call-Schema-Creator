@@ -1,0 +1,56 @@
+.card-container {
+    padding: 10px;
+    height: 100%;
+}
+
+.card {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border: 1px solid #ced4da;
+    border-radius: 8px;
+    box-sizing: border-box;
+    padding: 10px;
+}
+
+.form-group {
+    padding: 10px;
+    border-radius: 5px;
+    margin-bottom: 15px;
+    margin-left: -5px;
+    margin-right: -5px;
+    box-sizing: border-box;
+}
+
+.parameters-section {
+    padding: 10px;
+    border-radius: 5px;
+    margin-left: -5px;
+    margin-right: -5px; 
+}
+
+.parameter-group-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.parameter-group {
+    width: 48%;
+    padding: 10px;
+    border-radius: 5px;
+    box-sizing: border-box;
+    border: 1px solid #ced4da;
+}
+
+.add-parameter-group {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 48%;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    border: 1px solid #ced4da;
+}
